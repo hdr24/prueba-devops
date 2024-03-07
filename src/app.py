@@ -12,9 +12,11 @@ def homepage():
     # Render HTML with variable
     return render_template("index.html", the_time=the_time, tema="cats")
 
+
 @app.route('/status')
 def status():
     return "OK Todo"
+
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
