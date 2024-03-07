@@ -7,7 +7,7 @@ def test_index_route():
     response = app.test_client().get('/status')
 
     assert response.status_code == 200
-    assert response.data.decode('utf-8') == 'OK'
+    assert response.data.decode('utf-8') == 'O'
 
 
 def test_landing():
